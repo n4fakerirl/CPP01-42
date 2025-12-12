@@ -6,7 +6,7 @@
 #    By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/10 15:39:07 by ocviller          #+#    #+#              #
-#    Updated: 2025/12/10 16:42:46 by ocviller         ###   ########.fr        #
+#    Updated: 2025/12/12 15:14:37 by ocviller         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,4 +29,6 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 
-.PHONY: all clean fclean
+re: fclean all
+
+.PHONY: all clean fclean re

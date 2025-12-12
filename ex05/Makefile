@@ -5,16 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/10 15:39:07 by ocviller          #+#    #+#              #
-#    Updated: 2025/12/12 15:14:18 by ocviller         ###   ########.fr        #
+#    Created: 2025/12/12 13:12:04 by ocviller          #+#    #+#              #
+#    Updated: 2025/12/12 15:14:10 by ocviller         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = g++
 CFLAGS = -std=c++98 -Wall -Werror -Wextra
-NAME = sed
-SRC = main.cpp
-OBJ = main.o
+NAME = harl
+SRC = main.cpp Harl.cpp
+OBJ = main.o Harl.o
 OPTIONS = -o $(NAME)
 
 all: $(OBJ)
