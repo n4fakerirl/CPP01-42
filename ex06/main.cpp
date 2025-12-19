@@ -5,31 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/11 15:25:25 by ocviller          #+#    #+#             */
-/*   Updated: 2025/12/19 14:13:03 by ocviller         ###   ########.fr       */
+/*   Created: 2025/12/19 11:24:59 by ocviller          #+#    #+#             */
+/*   Updated: 2025/12/19 11:35:13 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
-#include "Weapon.hpp"
-#include "HumanB.hpp"
+#include "Harl.hpp"
 
-int main()
+void print(std::string message)
 {
-	{
-		Weapon club = Weapon("crude spiked club");
-		HumanA bob("Bob", club);
-		bob.attack();
-		club.setType("some other type of club");
-		bob.attack();
-	}
-	{
-		Weapon club = Weapon("crude spiked club");
-		HumanB jim("Jim");
-		jim.setWeapon(club);
-		jim.attack();
-		club.setType("some other type of club");
-		jim.attack();
-	}
-	return 0;
+    std::cout << message << "\n";
+}
+
+int main(int ac, char **av)
+{
+    if (ac != 2)
+        return (print("error: usage: ./harlFilter 'message'"), 1);
+    Harl harl;
+    harl.complain(av[1]);
+    return (0);
 }

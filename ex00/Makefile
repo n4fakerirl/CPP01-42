@@ -6,11 +6,11 @@
 #    By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/10 15:39:07 by ocviller          #+#    #+#              #
-#    Updated: 2025/12/12 15:14:37 by ocviller         ###   ########.fr        #
+#    Updated: 2025/12/19 11:42:06 by ocviller         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = g++
+CC = c++
 CFLAGS = -std=c++98 -Wall -Werror -Wextra
 NAME = zombie
 SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp

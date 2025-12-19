@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/12 13:12:34 by ocviller          #+#    #+#             */
-/*   Updated: 2025/12/19 11:47:32 by ocviller         ###   ########.fr       */
+/*   Created: 2025/12/19 11:24:56 by ocviller          #+#    #+#             */
+/*   Updated: 2025/12/19 11:33:07 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#pragma once
+#include <iostream>
 
-int main(void)
+class Harl
 {
-    Harl karen;
+    private:
+    void debug(void);
+    void info(void);
+    void warning(void);
+    void error(void);
 
-    karen.complain("DEBUG");
-    std::cout << "\n";
-    karen.complain("ERROR");
-    std::cout << "\n";
-    karen.complain("INFO");
-    std::cout << "\n";
-    karen.complain("test");
-    std::cout << "\n";
-}
+    public:
+    void complain(std::string level);
+};
+
+void print(std::string message);

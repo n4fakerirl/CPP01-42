@@ -5,16 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/10 15:39:07 by ocviller          #+#    #+#              #
-#    Updated: 2025/12/19 11:42:08 by ocviller         ###   ########.fr        #
+#    Created: 2025/12/12 13:12:04 by ocviller          #+#    #+#              #
+#    Updated: 2025/12/19 11:42:26 by ocviller         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 CFLAGS = -std=c++98 -Wall -Werror -Wextra
-NAME = zombie
-SRC = main.cpp Zombie.cpp zombieHorde.cpp
-OBJ = main.o Zombie.o zombieHorde.o
+NAME = harlFilter
+SRC = main.cpp Harl.cpp
+OBJ = main.o Harl.o
 OPTIONS = -o $(NAME)
 
 all: $(OBJ)
